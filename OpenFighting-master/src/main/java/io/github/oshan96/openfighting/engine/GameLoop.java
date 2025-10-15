@@ -76,7 +76,8 @@ public class GameLoop extends Thread {
 
     public void setFPS(int fps_cap) {
         GameLoop.fps_cap = fps_cap;
-    }
+        targetTime = 1000000000 / fps_cap;  // update targetTime when FPS changes
+    }   
 
     public int getFPS() {
         return GameLoop.fps_cap;
@@ -88,3 +89,4 @@ public class GameLoop extends Thread {
 
 
 }
+
