@@ -1,4 +1,4 @@
-# Open Fighting
+# Open Fighting (Vis Media Demon Slayer Game)
 
 ## Introduction
 “Open Fighting” is a simple, pixel art 2D game created using OpenGL’s java wrapper, JOGL. The game is on 2-player mode (to be played using the same keyboard – ‘90s style).  
