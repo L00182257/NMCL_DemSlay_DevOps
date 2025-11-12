@@ -1,0 +1,30 @@
+name: JavaDocs Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # allow manual trigger
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Generate Javadoc
+        run: mvn -f OpenFighting-master/pom.xml javadoc:javadoc
+
+      - name: Upload Javadoc artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: javadoc
+          path: OpenFighting-master/target/site/apidocs
