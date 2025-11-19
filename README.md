@@ -7,3 +7,4 @@ The game is taken from this github repo: https://github.com/Oshan96/OpenFighting
 
 Things to note:
 1 storypoint is equal to an half hour.
+You will see two contributers: L00182257 and Noahrock910. Both are me. L00182257 is usually mean accesing github on the browser while noahrock910 is me locally on my laptop.
