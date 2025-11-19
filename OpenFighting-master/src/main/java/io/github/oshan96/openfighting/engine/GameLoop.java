@@ -2,11 +2,15 @@ package io.github.oshan96.openfighting.engine;
 
 import io.github.oshan96.openfighting.graphics.Renderer;
 import io.github.oshan96.openfighting.world.World;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author oshan
  */
 public class GameLoop extends Thread {
+
+    private static final Logger logger = LoggerFactory.getLogger(GameLoop.class);
 
     private static int fps_cap = 60;
     private static long targetTime = 1000000000 / fps_cap;   //frames per sec
@@ -24,6 +28,8 @@ public class GameLoop extends Thread {
     @Override
     public void run() {
 
+        logger.info("GameLoop started (FPS cap: {} | targetTime: {}ns)", fps_cap, targetTime);
+
         lastUpdateTime = System.nanoTime();
 
         while(this.isAlive()) {
@@ -38,7 +44,13 @@ public class GameLoop extends Thread {
                 //update world
                 World.update();
                 updateCount++;
+
+                if (updateCount > 1) {
+                    logger.debug("Lag compensation: {} updates in one frame", updateCount);
+                }
+
                 if (updateCount >= MAX_UPDATES) {
+                    logger.warn("Max updates ({}) reached — frame skipped to catch up!", MAX_UPDATES);
                     break;
                 }
                 lastUpdateTime += targetTime;
@@ -48,7 +60,9 @@ public class GameLoop extends Thread {
             }
 
             //render
+            long renderStart = System.nanoTime();
             Renderer.render();
+            long renderTime = System.nanoTime() - renderStart;
 
             long startTime = System.nanoTime();
             long takenTime = System.nanoTime() - startTime;
@@ -58,35 +72,39 @@ public class GameLoop extends Thread {
                 try {
                     Thread.sleep((targetTime - takenTime) / 1000000);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    logger.error("GameLoop sleep interrupted", e);
+                    Thread.currentThread().interrupt();
                 }
+            } else {
+                logger.debug("Slow frame detected ({} ms)", renderTime / 1_000_000.0);
             }
-
         }
+
+        logger.info("GameLoop stopped.");
 
     }
 
     public static GameLoop getInstance() {
         if(gameLoop == null) {
+            logger.debug("Creating new GameLoop instance");
             gameLoop = new GameLoop();
         }
 
         return gameLoop;
     }
 
-    public void setFPS(int fps_cap) {
-        GameLoop.fps_cap = fps_cap;
-        targetTime = 1000000000 / fps_cap;  // update targetTime when FPS changes
-    }   
+    public void setFPS(int fps) {
+        fps_cap = fps;
+        targetTime = 1_000_000_000L / fps;
+        logger.info("FPS cap changed to {} (targetTime = {}ns)", fps_cap, targetTime);
+    }  
 
     public int getFPS() {
-        return GameLoop.fps_cap;
+        return fps_cap;
     }
 
     public static float getDelta() {
         return 1.0f * targetTime / 1000000000;
     }
-
-
 }
 
