@@ -8,11 +8,11 @@
         <module name="NeedBraces"/>
         <module name="WhitespaceAround"/>
         <module name="WhitespaceAfter"/>
-        <module name="LineLength">
-            <property name="max" value="120"/>
-        </module>
         <module name="EmptyBlock"/>
         <module name="UnusedImports"/>
         <module name="FinalLocalVariable"/>
+    </module>
+    <module name="LineLength">
+        <property name="max" value="120"/>
     </module>
 </module>
