@@ -37,7 +37,7 @@ jobs:
             --out /report
 
       - name: Upload Dependency Scan Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: dependency-vulnerability-report
           path: odc-reports/dependency-check-report.html
@@ -51,7 +51,7 @@ jobs:
         run: mvn -f OpenFighting-master/pom.xml package
 
       - name: Upload Build Logs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: engine-logs
           path: |
