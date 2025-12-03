@@ -1,0 +1,88 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar:/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all-main/2.3.2/jogl-all-main-2.3.2.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-aarch64.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-armv6.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-amd64.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6hf.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-i586.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-macosx-universal.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-amd64.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-i586.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-amd64.jar:/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-i586.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar'
+-encoding
+'UTF-8'
+-public
+-source
+'1.8'
+-sourcepath
+'/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'open-fighting 1.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'open-fighting 1.0 API'
+io.github.oshan96.openfighting.physics
+io.github.oshan96.openfighting.graphics
+io.github.oshan96.openfighting.resources
+io.github.oshan96.openfighting.engine
+io.github.oshan96.openfighting.inputs
+io.github.oshan96.openfighting.world.sprites
+io.github.oshan96.openfighting.world.sprites.fighters.power
+io.github.oshan96.openfighting.world.sprites.fighters.power.impl
+io.github.oshan96.openfighting.world.sprites.fighters
+io.github.oshan96.openfighting.world.sprites.fighters.impl
+io.github.oshan96.openfighting.world
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar = 1444487366000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar = 1444487281000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar = 1444487287000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar = 1444487290000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar = 1444487292000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar = 1444487295000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar = 1444487297000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar = 1444487299000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar = 1444487302000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar = 1444487304000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar = 1444487307000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar = 1444487309000
+/home/runner/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar = 1444487312000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all-main/2.3.2/jogl-all-main-2.3.2.jar = 1444487862000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar = 1444487756000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-aarch64.jar = 1444487763000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-armv6.jar = 1444487766000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-amd64.jar = 1444487769000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6.jar = 1444487772000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6hf.jar = 1444487775000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-i586.jar = 1444487778000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-macosx-universal.jar = 1444487781000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-amd64.jar = 1444487784000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-i586.jar = 1444487788000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-amd64.jar = 1444487791000
+/home/runner/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-i586.jar = 1444487794000
+/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar = 1707168776000
+/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar = 1713375779000
+/home/runner/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar = 1713375735000
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/src/main/java = 1764787571760
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/type-search-index.js = 1764787580504
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/stylesheet.css = 1764787580543
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/help-doc.html = 1764787580538
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/overview-summary.html = 1764787580535
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/allpackages-index.html = 1764787580503
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/index.html = 1764787580479
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/script.js = 1764787580543
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/search.js = 1764787580544
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/module-search-index.js = 1764787580504
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/package-search-index.js = 1764787580504
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/allclasses-index.html = 1764787580501
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/tag-search-index.js = 1764787580505
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/jquery-ui.overrides.css = 1764787580556
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/overview-tree.html = 1764787580477
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/element-list = 1764787580370
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/index-all.html = 1764787580534
+/home/runner/work/NMCL_DemSlay_DevOps/NMCL_DemSlay_DevOps/OpenFighting-master/target/site/apidocs/member-search-index.js = 1764787580505
