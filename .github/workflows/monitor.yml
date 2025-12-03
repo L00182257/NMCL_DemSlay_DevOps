@@ -24,6 +24,9 @@ jobs:
           cache: maven
 
       # Dependency + vulnerability scan
+      - name: Clean ODC database lock 
+        run: rm -rf ${{ github.workspace }}/odc-data/*
+      
       - name: Run OWASP Dependency Check
         run: |
           docker run --rm \
