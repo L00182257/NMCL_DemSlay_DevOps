@@ -24,11 +24,14 @@ jobs:
           cache: maven
 
       # Dependency + vulnerability scan
-      - name: Clean ODC database lock 
-        run: rm -rf ${{ github.workspace }}/odc-data/*
-
-      - name: Clean dependency-check data
-        run: rm -rf $HOME/.dependency-check/data
+      - name: Clean ALL ODC and Dependency-Check ata 
+        run: |
+          rm -rf ${{ github.workspace }}/odc-data/*
+          rm -rf %HOME/.dependency-check/data/*
+          rm -rf %{{ github.workspace }}/odc-reports/*
+          # For debugging
+          echo "After cleanup:"
+          find ${{ github.workspace }} -type f
       
       - name: Run OWASP Dependency Check
         run: |
