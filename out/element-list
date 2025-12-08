@@ -1,0 +1,11 @@
+io.github.oshan96.openfighting.engine
+io.github.oshan96.openfighting.graphics
+io.github.oshan96.openfighting.inputs
+io.github.oshan96.openfighting.physics
+io.github.oshan96.openfighting.resources
+io.github.oshan96.openfighting.world
+io.github.oshan96.openfighting.world.sprites
+io.github.oshan96.openfighting.world.sprites.fighters
+io.github.oshan96.openfighting.world.sprites.fighters.impl
+io.github.oshan96.openfighting.world.sprites.fighters.power
+io.github.oshan96.openfighting.world.sprites.fighters.power.impl
