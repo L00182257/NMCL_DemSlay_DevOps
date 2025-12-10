@@ -25,22 +25,22 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }} #No slip-ups here
 
       - name: Build Image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/openfighting-game
+          IMAGE_NAME=ghcr.io/openfighting-game
           docker build -t $IMAGE_NAME:latest .
 
       - name: Tag Image with SHA
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/openfighting-game
+          IMAGE_NAME=ghcr.io/openfighting-game
           SHA_TAG=$(echo ${{ github.sha }} | cut -c1-7)
           docker tag $IMAGE_NAME:latest $IMAGE_NAME:$SHA_TAG
           echo "IMAGE_SHA_TAG=$SHA_TAG" >> $GITHUB_ENV
 
       - name: Push Image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/openfighting-game
+          IMAGE_NAME=ghcr.io/openfighting-game
           docker push $IMAGE_NAME:latest
           docker push $IMAGE_NAME:${{ env.IMAGE_SHA_TAG }}
